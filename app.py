@@ -23,7 +23,7 @@ app = Dash(__name__, use_pages=True)
 # ])
 
 app.layout = html.Div([
-    html.Div([html.Img( src=app.get_asset_url( 'infralis_dark.png' ), style={"height":"10%", "width":"50%"}, ),
+    html.Div([html.Img( src=app.get_asset_url( 'DeafultSonnedixLogo.png' ), style={"height":"10%", "width":"50%"}, ),
               html.Div( [
         html.Div(
         [html.Button( dcc.Link( f"{page['name']}", href=page["relative_path"], className='sidebarInfralis_button' ) )
