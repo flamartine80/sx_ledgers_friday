@@ -23,11 +23,16 @@ app = Dash(__name__, use_pages=True)
 # ])
 
 app.layout = html.Div([
-    html.Div([html.Img( src=app.get_asset_url( 'DeafultSonnedixLogo.png' ), style={"height":"10%", "width":"50%"}, ),
-              html.Div( [
+    html.Div([html.Img( src=app.get_asset_url('SONNEDIX_WHT(transparent)_RGB.png'), style={"height":"15%",
+                                                                                           "width":"75%"}, ),
+              html.Div([
         html.Div(
-        [html.Button( dcc.Link( f"{page['name']}", href=page["relative_path"], className='sidebarInfralis_button' ) )
-            for page in dash.page_registry.values()],className="sidebarInfralis_buttonCentering" ), ] ),
+        # [html.Button( dcc.Link( f"{page['name']}", href=page["relative_path"]) )
+        # [html.Button( dcc.Link( f"{page['name']}", href=page["relative_path"], className='button_sx' ) )
+        [html.Button( dcc.Link( f"{page['name']}", href=page["relative_path"],className='link_sx' ),
+                      className='button_sx'  )
+            for page in dash.page_registry.values()],className='parent-container_sx' ), ] ),
+
 
     ],className='regular_sidebar'),
 	dash.page_container
