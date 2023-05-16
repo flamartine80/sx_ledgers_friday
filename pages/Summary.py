@@ -10,4 +10,4 @@ layout = html.Div(children=[
         Summary
     '''),
 
-])
+],className='sx_body')

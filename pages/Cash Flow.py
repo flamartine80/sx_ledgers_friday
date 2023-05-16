@@ -87,6 +87,6 @@ layout = html.Div(children=[
             style={"width": 350},
         )
 
-    ])
+    ],className='sx_body')
 
-],className='regular_body')
+],className='sx_container')

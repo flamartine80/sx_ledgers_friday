@@ -332,8 +332,12 @@ def execute_values(conn, df, table):
     # return query
 # conn_string = create_engine('postgresql+psycopg2://postgres:Rondamon_1988@database-2.culhcfcdryty.us-east-2.rds.amazonaws.com/sonnedix_chile')
 
-conn = psycopg2.connect( database='sonnedix_chile', user='postgres', password='Rondamon_1988', host='database-2.culhcfcdryty.us-east-2.rds.amazonaws.com',
-    port='5432' )
+# conn = psycopg2.connect( database='sonnedix_chile', user='postgres', password='Rondamon_1988', host='database-2.culhcfcdryty.us-east-2.rds.amazonaws.com',
+#     port='5432' )
+
+conn = psycopg2.connect( database='sx_chile_local', user='postgres', password='Zenon_1917',
+                         host='localhost',port='5432' )
+
 
 df = joined_years_relevant
 

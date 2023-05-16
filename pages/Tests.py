@@ -6,9 +6,11 @@ import xlwings as xw
 
 dash.register_page(__name__)
 
+#
+# data = xw.Book('2C - Naamandu - FINANCIAL MODEL - working_file.xlsx').sheets('Time Variables').range(
+#     'a1:e18').value
 
-data = xw.Book('2C - Naamandu - FINANCIAL MODEL - working_file.xlsx').sheets('Time Variables').range(
-    'a1:e18').value
+data = pd.DataFrame({'chant':['Time Passages','Al Steward'], 'Rods':['JuanJuarry','Pätri']})
 
 df = pd.DataFrame(data = data)
 df.columns = df.iloc[0]
